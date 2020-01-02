@@ -73,6 +73,7 @@ class Song
       data = x.split("-")
       name = data[0]
       title = data[1]
+    end  
   end
 
 
