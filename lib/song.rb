@@ -50,7 +50,7 @@ class Song
     # check @@all if song exists return song instance
       if self.find_by_name(name) == false
           self.create_by_name(name)
-      else 
+      else self.create_by_name(name)
       end
   end
 
