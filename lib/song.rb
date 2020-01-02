@@ -66,8 +66,13 @@ class Song
   # must be parsed for the relevant components. Separate the artist name from the rest of the data based on the - delimiter.
   # Don't forget that when you parse the song name, you have to remove the '.mp3' part of the string.
 
+  # "Taylor Swift - Blank Space.mp3"
   def self.new_from_filename(filename)
-    
+    split = filename.split("-")
+    artist = split.collect do |x|
+      data = x.split("-")
+      name = data[0]
+      title = data[1]
   end
 
 
