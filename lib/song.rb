@@ -58,7 +58,7 @@ class Song
   end
 
   # Build a class constructor that accepts a filename in the format of " - .mp3",
-  # for example, "Taylor Swift - Blank Space.mp3". 
+  # for example, "Taylor Swift - Blank Space.mp3".
   # Given Song.new_from_filename("Taylor Swift - Blank Space.mp3"),
   # the constructor should return a new Song instance with the song name set to Blank Space
   # and the artist_name set to Taylor Swift.
@@ -69,6 +69,6 @@ class Song
   def self.new_from_filename(filename)
     
   end
-  
+
 
 end
