@@ -48,7 +48,7 @@ class Song
   # with that name or create a new song with the name and return the song instance.
   def self.find_or_create_by_name(name)
     # check @@all if song exists return song instance
-      if self.find_by_name(name) == true
+      if self.find_by_name(name) 
     
       else self.create_by_name(name)
       end
