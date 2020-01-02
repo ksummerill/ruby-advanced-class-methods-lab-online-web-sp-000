@@ -74,8 +74,13 @@ class Song
       name = data[0]
       title = data[1]
       # title = data[1].chomp(".mp3")
+      song = self.new
+      song.name = name
+      song.title = title
+      song
     end
-    filename
+    artist
+
   end
 
 
