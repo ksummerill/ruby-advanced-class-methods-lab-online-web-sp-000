@@ -68,19 +68,10 @@ class Song
 
   # "Taylor Swift - Blank Space.mp3"
   def self.new_from_filename(filename)
-    split = filename.split("-")
-    artist = split.collect do |x|
-      data = x.split("-")
-      name = data[0]
-      title = data[1]
-      # title = data[1].chomp(".mp3")
       song = self.new
-      song.name = name
-      song.title = title
+      song.artist_name = (name.split(" - ")[0])
+      song.name = (name.split(" - ")[1].chomp(".mp3"))
       song
-    end
-    artist
-
   end
 
 
