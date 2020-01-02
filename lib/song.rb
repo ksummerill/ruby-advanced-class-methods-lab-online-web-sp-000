@@ -72,8 +72,8 @@ class Song
     artist = split.collect do |x|
       data = x.split("-")
       name = data[0]
-      title = data[1]
-    end  
+      title = data[1].chomp(".mp3")
+    end
   end
 
 
