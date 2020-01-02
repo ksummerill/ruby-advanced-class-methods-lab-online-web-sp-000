@@ -67,7 +67,7 @@ class Song
   # Don't forget that when you parse the song name, you have to remove the '.mp3' part of the string.
 
   # "Taylor Swift - Blank Space.mp3"
-  def self.new_from_filename(filename)
+  def self.new_from_filename(name)
     song = self.new
     song.name = (name.split(" - ")[1].chomp(".mp3"))
     song.artist_name = (name.split(" - ")[0])
