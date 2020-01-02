@@ -51,5 +51,10 @@ class Song
       self.find_by_name(name) || self.create_by_name(name)
   end
 
+  # Build a class method Song.alphabetical that returns all the songs
+  # in ascending (a-z) alphabetical order.
+  def self.alphabetical
+    @@all.sort_by {|title| title}
+  end
 
 end
