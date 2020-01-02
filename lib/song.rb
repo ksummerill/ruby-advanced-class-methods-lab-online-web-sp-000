@@ -75,6 +75,7 @@ class Song
       title = data[1]
       # title = data[1].chomp(".mp3")
     end
+    filename
   end
 
 
